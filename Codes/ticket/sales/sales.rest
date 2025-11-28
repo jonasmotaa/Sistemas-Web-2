@@ -1,0 +1,61 @@
+# ======================================
+# EVENTS ENDPOINTS
+# ======================================
+
+GET http://localhost:4000/events
+
+GET http://localhost:4000/events/c6e9a7e8-f7b7-4c4e-b2f7-2d46d7a469a4
+
+
+POST http://localhost:4000/events
+Content-Type: application/json
+
+{
+  "description": "Peça de Teatro Y",
+  "type": "TEATRO",
+  "date": "2025-11-15T21:00:00",
+  "startSales": "2025-09-01T09:00:00",
+  "endSales": "2025-11-14T23:59:59",
+  "price": 80.50
+}
+
+
+PUT http://localhost:4000/events/c6e9a7e8-f7b7-4c4e-b2f7-2d46d7a469a4
+Content-Type: application/json
+
+{
+  "description": "Show da Banda X - Nova Data",
+  "price": 175.0
+}
+
+
+DELETE http://localhost:4000/events/c6e9a7e8-f7b7-4c4e-b2f7-2d46d7a469a4
+
+
+# ======================================
+# SALES ENDPOINTS
+# ======================================
+
+POST http://localhost:4000/sales
+Content-Type: application/json
+
+{
+  "userId": "a8f8e0d5-7b6c-4b3a-8f7e-2a3b4c5d6e7f",
+  "eventId": "c6e9a7e8-f7b7-4c4e-b2f7-2d46d7a469a4"
+}
+
+
+GET http://localhost:4000/sales/f4b3a2c1-d0e9-4f8a-a2b1-1a2b3c4d5e6f
+
+
+GET http://localhost:4000/sales/user/a8f8e0d5-7b6c-4b3a-8f7e-2a3b4c5d6e7f
+
+
+PATCH http://localhost:4000/sales/f4b3a2c1-d0e9-4f8a-a2b1-1a2b3c4d5e6f/status
+Content-Type: application/json
+
+{
+  "newStatus": "PAGO"
+}
+
+DELETE http://localhost:4000/sales/f4b3a2c1-d0e9-4f8a-a2b1-1a2b3c4d5e6f
