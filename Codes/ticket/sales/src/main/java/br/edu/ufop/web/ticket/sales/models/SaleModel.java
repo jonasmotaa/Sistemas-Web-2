@@ -3,7 +3,7 @@ package br.edu.ufop.web.ticket.sales.models;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-import br.edu.ufop.web.ticket.sales.enums.SaleStatus;
+import br.edu.ufop.web.ticket.sales.enums.EnumSaleStatusType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -48,7 +48,7 @@ public class SaleModel {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private SaleStatus saleStatus;
+    private EnumSaleStatusType saleStatus;
 
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;

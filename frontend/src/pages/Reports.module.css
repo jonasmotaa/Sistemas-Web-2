@@ -1,0 +1,160 @@
+.reportsPage {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header p {
+    color: #718096;
+    margin-top: 0.25rem;
+}
+
+.exportButton {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.exportButton:hover {
+    background-color: #4c51bf;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.statCard {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.statCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.statIcon {
+    font-size: 1.75rem;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.statTitle {
+    color: #718096;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.statValue {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.cardTitle {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.performanceList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.performanceItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.eventInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.eventInfo small {
+    color: #a0aec0;
+    font-size: 0.9rem;
+}
+
+.salesStatusGrid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 1rem; /* Adicionado para garantir espaçamento */
+}
+
+.statusItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.statusValue {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.statusItem span {
+    color: #718096;
+    font-weight: 500;
+}
+
+.statusLine {
+    height: 4px;
+    width: 100px;
+    border-radius: 2px;
+    margin-top: 0.5rem;
+}
+
+.confirmed {
+    background-color: #38a169;
+}
+.pending {
+    background-color: #dd6b20;
+}
+.cancelled {
+    background-color: #e53e3e;
+}
+
+.estornado {
+    background-color: #4299e1;
+}

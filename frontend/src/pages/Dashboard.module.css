@@ -1,0 +1,172 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #1a202c;
+}
+
+.header p {
+    color: #718096;
+    margin-top: 0.25rem;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.statCard {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.statCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.statIcon {
+    font-size: 1.75rem;
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.statTitle {
+    color: #718096;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.statValue {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2d3748;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.listCard {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.monthFilter {
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+    background-color: #f7fafc;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.cardTitle {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.saleDetails {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.value {
+    color: #4a5568;
+    min-width: 80px;
+    text-align: right;
+}
+
+.status {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    min-width: 80px;
+    text-align: center;
+}
+
+.pago {
+    color: #2f855a;
+    background-color: #c6f6d5;
+}
+
+.emaberto, .pendente {
+    color: #b7791f;
+    background-color: #feebc8;
+}
+
+.cancelado {
+    color: #c53030;
+    background-color: #fed7d7;
+}
+
+.estornado {
+    color: #2c5282;
+    background-color: #bee3f8;
+}
+
+.eventItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.eventInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: 500;
+}
+
+.eventInfo small {
+    color: #a0aec0;
+    font-size: 0.8rem;
+}

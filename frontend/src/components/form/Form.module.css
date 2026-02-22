@@ -1,0 +1,73 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.formGroup label {
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.formGroup input,
+.formGroup select {
+    padding: 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.formActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #4c51bf;
+}
+
+.cancelButton {
+    background-color: #e2e8f0;
+    color: #4a5568;
+}
+
+.cancelButton:hover {
+    background-color: #cbd5e0;
+}
+
+.formRow {
+    display: flex;
+    gap: 1rem;
+}
+
+.formRow > .formGroup {
+    flex: 1;
+}
+
+.error {
+    color: #c53030;
+    background-color: #fed7d7;
+    border: 1px solid #c53030;
+    border-radius: 8px;
+    padding: 0.75rem;
+    text-align: center;
+}

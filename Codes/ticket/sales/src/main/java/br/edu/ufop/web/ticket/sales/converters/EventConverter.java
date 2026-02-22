@@ -1,25 +1,27 @@
 package br.edu.ufop.web.ticket.sales.converters;
 
-import org.springframework.stereotype.Component;
-
-import br.edu.ufop.web.ticket.sales.dtos.EventDTO;
+import br.edu.ufop.web.ticket.sales.domain.EventDomain;
+import br.edu.ufop.web.ticket.sales.dtos.events.CreateEventDTO;
+import br.edu.ufop.web.ticket.sales.dtos.events.EventDTO;
+import br.edu.ufop.web.ticket.sales.dtos.events.UpdateEventDTO;
 import br.edu.ufop.web.ticket.sales.models.EventModel;
+import lombok.NoArgsConstructor;
 
-@Component
+@NoArgsConstructor
 public class EventConverter {
 
-    public EventModel toModel(EventDTO dto) {
+    public static EventModel toModel(EventDomain domain) {
         return EventModel.builder()
-                .description(dto.getDescription())
-                .type(dto.getType())
-                .date(dto.getDate())
-                .startSales(dto.getStartSales())
-                .endSales(dto.getEndSales())
-                .price(dto.getPrice())
+                .description(domain.getDescription())
+                .type(domain.getType())
+                .date(domain.getDate())
+                .startSales(domain.getStartSales())
+                .endSales(domain.getEndSales())
+                .price(domain.getPrice())
                 .build();
     }
 
-    public EventDTO toDTO(EventModel model) {
+    public static EventDTO toDTO(EventModel model) {
         EventDTO dto = new EventDTO();
         dto.setId(model.getId());
         dto.setDescription(model.getDescription());
@@ -32,4 +34,29 @@ public class EventConverter {
         dto.setUpdatedAt(model.getUpdatedAt());
         return dto;
     }
+
+    public static EventDomain toDomain(CreateEventDTO eventDTO) {
+        return EventDomain.builder()
+        .type(eventDTO.getType())
+        .description(eventDTO.getDescription())
+        .date(eventDTO.getDate())
+        .startSales(eventDTO.getStartSales())
+        .endSales(eventDTO.getEndSales())
+        .price(eventDTO.getPrice())
+        .createdAt(eventDTO.getCreatedAt())
+        .updatedAt(eventDTO.getUpdatedAt())
+        .build();        
+    }
+
+    public static EventDomain toDomain(UpdateEventDTO updateEventDTO) {
+        return EventDomain.builder()
+                .description(updateEventDTO.getDescription())
+                .type(updateEventDTO.getType())
+                .date(updateEventDTO.getDate())
+                .startSales(updateEventDTO.getStartSales())
+                .endSales(updateEventDTO.getEndSales())
+                .price(updateEventDTO.getPrice())
+                .build();
+    }
+
 }

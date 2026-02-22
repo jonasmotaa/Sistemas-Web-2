@@ -1,0 +1,163 @@
+.salesPage {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header p {
+    color: #718096;
+    margin-top: 0.25rem;
+}
+
+.newSaleButton {
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.newSaleButton:hover {
+    background-color: #4c51bf;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+}
+
+.searchInput, .statusFilter {
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+.searchInput {
+    flex-grow: 1;
+}
+
+.salesList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.saleItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.saleInfo {
+    flex-grow: 1;
+}
+
+.eventTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.eventTitle h4 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.saleDetails {
+    display: flex;
+    gap: 1.5rem;
+    color: #718096;
+    align-items: center;
+}
+
+.amount {
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.statusBadge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.pago {
+    color: #2f855a;
+    background-color: #c6f6d5;
+}
+
+.emaberto, .pendente {
+    color: #b7791f;
+    background-color: #feebc8;
+}
+
+.cancelado {
+    color: #c53030;
+    background-color: #fed7d7;
+}
+
+.estornado {
+    color: #2c5282;
+    background-color: #bee3f8;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.actionButton {
+    background-color: #f7fafc;
+    color: #a0aec0;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.actionButton.active {
+    color: white;
+}
+
+.actionButton.pago.active {
+    background-color: #38a169;
+    border-color: #38a169;
+}
+
+.actionButton.pendente.active {
+    background-color: #dd6b20;
+    border-color: #dd6b20;
+}
+
+.actionButton.cancelado.active {
+    background-color: #e53e3e;
+    border-color: #e53e3e;
+}
+
+.actionButton.estornado.active {
+    background-color: #4299e1;
+    border-color: #4299e1;
+}

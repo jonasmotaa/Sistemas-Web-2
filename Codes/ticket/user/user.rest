@@ -10,27 +10,171 @@ GET http://localhost:3000/users/a3d0fee0-8a0c-4cbf-93c0-ed3d0057218f
 ###
 GET http://localhost:3000/users/byname/fer
 
-###
+### 1
 POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "name": "Hugo",
-    "creditCardNumber": "123456789",
-    "email": "hugo@web.ufop.edu.br",
-    "password": "123456"
+    "name": "Lucas",
+    "creditCardNumber": "123456710",
+    "email": "lucas@web.ufop.edu.br",
+    "password": "123789"
 }
 
-###
-PUT http://localhost:3000/users
+### 2
+POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-    "id": "02c95281-bfa8-4859-93dc-1508ed511901",
-    "name": "Hugo Oliveira",
-    "creditCardNumber": "987654321",
-
+    "name": "Mariana",
+    "creditCardNumber": "223456711",
+    "email": "mariana@aluno.ufop.edu.br",
+    "password": "abc123"
 }
+
+### 3
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "João Pedro",
+    "creditCardNumber": "323456712",
+    "email": "joaopedro@web.ufop.edu.br",
+    "password": "senha123"
+}
+
+### 4
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Fernanda",
+    "creditCardNumber": "423456713",
+    "email": "fernanda@aluno.ufop.edu.br",
+    "password": "321cba"
+}
+
+### 5
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Rafael",
+    "creditCardNumber": "523456714",
+    "email": "rafael@web.ufop.edu.br",
+    "password": "qwerty"
+}
+
+### 6
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Camila",
+    "creditCardNumber": "623456715",
+    "email": "camila@aluno.ufop.edu.br",
+    "password": "147258"
+}
+
+### 7
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Thiago",
+    "creditCardNumber": "723456716",
+    "email": "thiago@web.ufop.edu.br",
+    "password": "pass123"
+}
+
+### 8
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Beatriz",
+    "creditCardNumber": "823456717",
+    "email": "beatriz@aluno.ufop.edu.br",
+    "password": "btrz321"
+}
+
+### 9
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "André",
+    "creditCardNumber": "923456718",
+    "email": "andre@web.ufop.edu.br",
+    "password": "senha456"
+}
+
+### 10
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Gabriela",
+    "creditCardNumber": "103456719",
+    "email": "gabriela@aluno.ufop.edu.br",
+    "password": "123456"
+}
+
+### 11
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Rodrigo",
+    "creditCardNumber": "113456720",
+    "email": "rodrigo@web.ufop.edu.br",
+    "password": "654321"
+}
+
+### 12
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Isabela",
+    "creditCardNumber": "123456721",
+    "email": "isabela@aluno.ufop.edu.br",
+    "password": "isa123"
+}
+
+### 13
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Felipe",
+    "creditCardNumber": "133456722",
+    "email": "felipe@web.ufop.edu.br",
+    "password": "feli789"
+}
+
+### 14
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Larissa",
+    "creditCardNumber": "143456723",
+    "email": "larissa@aluno.ufop.edu.br",
+    "password": "lari321"
+}
+
+### 15
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Bruno",
+    "creditCardNumber": "153456724",
+    "email": "bruno@web.ufop.edu.br",
+    "password": "br1234"
+}
+
 
 ###
 PUT http://localhost:3000/users/password
@@ -49,7 +193,7 @@ DELETE http://localhost:3000/users/remove
 Content-Type: application/json
 
 {
-    "id": "02c95281-bfa8-4859-93dc-1508ed511901"
+    "id": "cf19ade9-e961-44a4-8859-545377b65ed5"
 }
 
 ###
